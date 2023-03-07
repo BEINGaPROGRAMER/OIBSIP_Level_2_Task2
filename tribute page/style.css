@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+    background-color: #F9F9F9;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #0C2D48;
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    flex-basis: 50%;
+    max-width: 500px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.about img {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
+
+.quote {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.quote p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quote cite {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.achievement {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.achievement h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0C2D48;
+}
+
+.achievement p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #0C2D48;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all .5s ease;
+}
+
+.ctaa:hover {
+    background-color: #FFFFFF;
+    color: #0C2D48;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.quote {
+    flex-basis: 50%;
+}
+
+.achievement {
+    flex-basis: 100%;
+}
+}
